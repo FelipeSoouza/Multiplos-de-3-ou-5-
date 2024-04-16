@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int limite = 1000;
+        int soma = 0;
+
+        for (int i = 1; i < limite; i++)
+        {
+            if (i % 3 == 0 || i % 5 == 0)
+            {
+                soma += i;
+            }
+        }
+
+        Console.WriteLine("A soma de todos os múltiplos de 3 ou 5 abaixo de 1000 é: " + soma);
+    }
+}
